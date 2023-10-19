@@ -125,9 +125,8 @@ function totalMonths() {
 console.log(totalMonths())
 
 // Function that prints the net total amount of "Profit/Losses" over the entire period
-
+var total = 0;
 function totalMoney() {
-  var total = 0;
   for (var i = 0; i < profits.length; i++) {
     total += profits[i];
   }
@@ -135,3 +134,24 @@ function totalMoney() {
 }
 
 console.log(totalMoney());
+
+
+// Track total change in profits/losses over the entire period
+
+function totalChange() {
+  var change = 0;
+  for (var i = 1; i < profits.length; i++) {
+    change += profits[i] - profits[i-1];
+  }
+  return change;
+}
+
+// Function that prints the average of the changes in "Profit/Losses" over the entire period
+
+function averageChange() {
+  var average = totalChange() / (profits.length - 1);
+  return average.toFixed(2);
+}
+
+console.log((averageChange()));
+
