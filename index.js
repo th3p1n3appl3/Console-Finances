@@ -86,3 +86,33 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+// Array for storing dates in the finances array 
+var months = [];
+
+// Function that stores the dates in the dates array
+
+function getmonths() {
+  for (var i = 0; i < finances.length; i++) {
+    months.push(finances[i][0]);
+  }
+  return months;
+}
+
+console.log(getmonths());
+
+// Array for storing profits/losses in the finances array
+
+var profits = [];
+
+// Function that stores the profits/losses in the profits array
+
+function getMoney() {
+  for (var i = 0; i < finances.length; i++) {
+    profits.push(finances[i][1]);
+  }
+  return profits;
+}
+
+console.log (getMoney());
+
