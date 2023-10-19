@@ -116,3 +116,22 @@ function getMoney() {
 
 console.log (getMoney());
 
+// Function that prints the total number of months included in the dataset
+
+function totalMonths() {
+  return months.length;
+}
+
+console.log(totalMonths())
+
+// Function that prints the net total amount of "Profit/Losses" over the entire period
+
+function totalMoney() {
+  var total = 0;
+  for (var i = 0; i < profits.length; i++) {
+    total += profits[i];
+  }
+  return total;
+}
+
+console.log(totalMoney());
