@@ -132,7 +132,7 @@ function totalMoney() {
   }
   return total;
 }
-
+var allMoney = totalMoney();
 console.log(totalMoney());
 
 
@@ -155,3 +155,43 @@ function averageChange() {
 
 console.log((averageChange()));
 
+// Function that prints the greatest increase in profits (date and amount) over the entire period
+function greatestIncrease() {
+  var increase = 0;
+  var date = '';
+  for (var i = 1; i < finances.length; i++) {
+    if (finances[i][1] - finances[i-1][1] > increase) {
+      increase = finances[i][1] - finances[i-1][1];
+      date = finances[i][0];
+    }
+  }
+  return [date, increase];
+}
+
+console.log(greatestIncrease());
+
+// Function that prints the greatest decrease in losses (date and amount) over the entire period
+
+function greatestDecrease() {
+  var decrease = 0;
+  var date = '';
+  for (var i = 1; i < finances.length; i++) {
+    if (finances[i][1] - finances[i-1][1] < decrease) {
+      decrease = finances[i][1] - finances[i-1][1];
+      date = finances[i][0];
+    }
+  }
+  return [date, decrease];
+}
+
+console.log(greatestDecrease());
+
+// Print results to console
+
+console.log('Financial Analysis');
+console.log('------------------');
+console.log('Total Months: ' + totalMonths());
+console.log('Total: $' + allMoney);
+console.log('Average Change: $' + averageChange());
+console.log('Greatest Increase in Profits: ' + greatestIncrease()[0] + ' ($' + greatestIncrease()[1] + ')');
+console.log('Greatest Decrease in Profits: ' + greatestDecrease()[0] + ' ($' + greatestDecrease()[1] + ')');
