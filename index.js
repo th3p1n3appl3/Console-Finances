@@ -99,7 +99,6 @@ function getmonths() {
   return months;
 }
 
-console.log(getmonths());
 
 // Array for storing profits/losses in the finances array
 
@@ -114,7 +113,6 @@ function getMoney() {
   return profits;
 }
 
-console.log (getMoney());
 
 // Function that prints the total number of months included in the dataset
 
@@ -122,7 +120,6 @@ function totalMonths() {
   return months.length;
 }
 
-console.log(totalMonths())
 
 // Function that prints the net total amount of "Profit/Losses" over the entire period
 var total = 0;
@@ -133,7 +130,7 @@ function totalMoney() {
   return total;
 }
 var allMoney = totalMoney();
-console.log(totalMoney());
+
 
 
 // Track total change in profits/losses over the entire period
@@ -153,7 +150,6 @@ function averageChange() {
   return average.toFixed(2);
 }
 
-console.log((averageChange()));
 
 // Function that prints the greatest increase in profits (date and amount) over the entire period
 function greatestIncrease() {
@@ -168,7 +164,6 @@ function greatestIncrease() {
   return [date, increase];
 }
 
-console.log(greatestIncrease());
 
 // Function that prints the greatest decrease in losses (date and amount) over the entire period
 
@@ -184,7 +179,6 @@ function greatestDecrease() {
   return [date, decrease];
 }
 
-console.log(greatestDecrease());
 
 // Print results to console
 
