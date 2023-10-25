@@ -20,7 +20,7 @@ The main usage of this project is to understand how to work with arrays within a
 
 ## Screenshot
 
-![ScreenShot](https://imageupload.io/ib/md3XwvqL6jsmKIg_1698181781.png)
+![ScreenShot](https://bashify.io/img/e144a6b6c3aed63cc12a00f5a777c3e8)
 
 ## License
 
